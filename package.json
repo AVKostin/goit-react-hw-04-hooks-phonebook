@@ -5,7 +5,7 @@
   "homepage": "https://avkostin.github.io/goit-react-hw-04-hooks-phonebook",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
+    "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^3.2.3",
     "modern-normalize": "^1.1.0",
@@ -17,6 +17,7 @@
     "react-phone-number-input": "^3.1.52",
     "react-scripts": "5.0.1",
     "shortid": "^2.2.16",
+    "uselocalstorage-react-hook": "^1.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
