@@ -4,7 +4,7 @@ import { MdOutlineDeleteForever } from 'react-icons/md';
 import { BsTelephone } from 'react-icons/bs';
 import { IoIosContact } from 'react-icons/io';
 
-const Contacts = ({ contacts, filter, filteredContacts, deleteContact }) => {
+export default function Contacts ({ contacts, filter, filteredContacts, deleteContact }){
   let rendered = filter === '' ? contacts : filteredContacts();
   return (
     <ul className={styles.contactsList}>
@@ -39,5 +39,3 @@ Contacts.propTypes = {
   filteredContacts: PropTypes.func,
   deleteContact: PropTypes.func,
 };
-
-export default Contacts;
