@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import shortid from 'shortid';
-import { TiUserAddOutline } from 'react-icons/ti';
 import Notiflix from 'notiflix'
-import styles from './styles.module.css';
 import PropTypes from 'prop-types';
+import styles from './styles.module.css';
 import 'react-phone-number-input/style.css';
+import { TiUserAddOutline } from 'react-icons/ti';
 
 Notiflix.Notify.init({
 	position: 'center-top',
@@ -46,10 +46,8 @@ const [isDisabled, setIsDisabled] = useState('false')
     if (contactFinder) {
     setIsDisabled(true);
       Notiflix.Notify.warning(`${name} ${number} is already in contacts / уже есть в списке ваших контактов.`);
-  }
-
+    }
   },[name, number, contacts]);
-
 
     return (
       <form onSubmit={handleSubmit} className={styles.form}>
@@ -90,7 +88,6 @@ const [isDisabled, setIsDisabled] = useState('false')
         </button>
       </form>
     );
-
 }
 
 Form.propTypes = {
